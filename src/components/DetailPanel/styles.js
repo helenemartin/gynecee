@@ -15,6 +15,11 @@ export const Panel = styled.article`
   padding: 40px 120px 60px 40px;
   overflow: scroll;
   transition: 300ms;
+
+  img {
+    filter: none;
+  }
+
   @media (max-width: 800px) {
     border-left: none;
     padding: 40px 86px 20px 20px;

@@ -1,10 +1,10 @@
 import React from "react";
 import { Container, Cover, Title, Author } from "./styles";
 
-const Book = ({ book, pickBook, isLarge, isColored }) => (
+const Book = ({ book, pickBook, isLarge }) => (
   <Container $isLarge={isLarge} onClick={() => pickBook && pickBook(book)}>
     <Cover
-      $isColored={isColored}
+      // $isColored={isColored}
       alt={`Book cover for ${book.title} by ${book.author}`}
       src={book.image}
     />
